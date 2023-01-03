@@ -1,0 +1,1423 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-out {
+    /*border:1px solid red;*/
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background-color: #000E35;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-title {
+    /*border:1px solid gold;*/
+    width: 1920px;
+    height: 80px;
+}
+
+.main-content {
+    /*border:3px solid red;*/
+    width: 1906px;
+    height: 990px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*左边开始*/
+.main-content-left {
+    /*border:1px solid red;*/
+    width: 488px;
+    height: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-content-left-top {
+    /*border:5px solid blue;*/
+    margin-top: 10px;
+    width: 488px;
+    height: 430px;
+    background: url("../../images/bigscreen/goods_info_back.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/*物资信息*/
+/*.main-content-left-top-goods-info{
+    !*border:1px solid green;*!
+}*/
+.main-content-left-top-goods-info-title {
+    /*border:1px solid red;*/
+    width: 488px;
+    height: 33px;
+    position: relative;
+}
+
+.main-content-left-top-goods-info-title label {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 17.6px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-top-goods-info-summary {
+    /*border:1px solid green;*/
+    width: 488px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-content-left-top-goods-info-summary-tab {
+    /*border:1px solid #31B8FF;*/
+    width: 205px;
+    height: 49px;
+    background: url("../../images/bigscreen/left-goods-back.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-top-goods-info-summary-tab-text {
+    font-size: 16.75px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.main-content-left-top-goods-info-voltage {
+    /*border:1px solid palevioletred;*/
+    width: 264px;
+    height: 32px;
+}
+
+.main-content-left-top-goods-info-voltage-tab {
+    /*border:1px solid palevioletred;*/
+    width: 264px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-top-goods-info-voltage-tab-div1 {
+    /*border:1px solid palevioletred;*/
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 15px;
+    width: 62.5px;
+    height: 24px;
+    position: relative;
+}
+
+.main-content-left-top-goods-info-voltage-tab-div1 img {
+    /*border:1px solid red;*/
+    cursor: pointer;
+    width: 62.5px;
+    height: 24px;
+}
+
+.main-content-left-top-goods-info-voltage-tab-div1 label {
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    font-size: 9.5px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 0px;
+}
+
+.main-content-left-top-goods-info-voltage-tab-div {
+    /*border:1px solid red;*/
+    cursor: pointer;
+    margin-right: 15px;
+    width: 62.5px;
+    height: 24px;
+    position: relative;
+}
+
+.main-content-left-top-goods-info-voltage-tab-div label {
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    font-size: 9.5px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-top-goods-info-voltage-tab-div img {
+    /*border:1px solid red;*/
+    cursor: pointer;
+    z-index: 1;
+    width: 62.5px;
+    height: 24px;
+}
+
+/*.main-content-left-top-goods-info-voltage-empty{*/
+/*border:1px solid red;*/
+/*width: 488px;*/
+/*height: 128px;*/
+/*}*/
+.main-content-left-top-goods-info-list {
+    /*border:1px solid green;*/
+    margin-top: 10px;
+    width: 488px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-top-goods-info-list table {
+    /*border:1px solid red;*/
+    width: 442px;
+    height: 210px;
+    text-align: center;
+}
+
+.main-content-left-top-goods-info-list table thead {
+    width: 442px;
+    height: 32px;
+    background-color: #011B4D;
+}
+
+.main-content-left-top-goods-info-list table thead tr td {
+    font-size: 14.5px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.main-content-left-top-goods-info-list table tbody tr:nth-child(2n) {
+    background-color: #011B4D;
+}
+
+.main-content-left-top-goods-info-list table tbody tr td {
+    font-size: 11.5px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-top-goods-info-empty {
+    /*border:1px solid darkcyan;*/
+    width: 488px;
+    height: 50px;
+}
+
+/*物资信息*/
+/*停车位使用率*/
+.main-content-left-middle {
+    /*border:1px solid darkmagenta;*/
+    margin-top: 8px;
+    width: 488px;
+    height: 257px;
+    background: url("../../images/bigscreen/use-rate2.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-content-left-middle-title {
+    /*border:1px solid red;*/
+    width: 488px;
+    height: 32.5px;
+    position: relative;
+}
+
+.main-content-left-middle-title label {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-middle-content {
+    /*border:1px solid darkgreen;*/
+    width: 488px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-middle-content-left {
+    /*border:1px solid darkgreen;*/
+    width: 170px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-middle-content-left-all {
+    /*border:1px solid red;*/
+    width: 170px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-middle-content-left-all-button {
+    /*border:1px solid fuchsia;*/
+    cursor: pointer;
+    width: 170px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-content-left-middle-content-left-all-button label {
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-middle-content-left-all-button img {
+    /*border:1px solid red;*/
+    z-index: 1;
+    width: 120px;
+    height: 40px;
+}
+
+.main-content-left-middle-content-middle {
+    /*border:1px solid green;*/
+    width: 168px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-middle-content-middle-chart {
+    /*border:1px solid blue;*/
+    width: 134px;
+    height: 127px;
+}
+
+.main-content-left-middle-content-right {
+    /*border:1px solid darkmagenta;*/
+    width: 150px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-middle-content-right-all {
+    /*border:1px solid red;*/
+    width: 150px;
+    height: 135px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-middle-content-right-all-item {
+    /*border:1px solid green;*/
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-middle-content-right-all-item label {
+    /*border:1px solid green;*/
+    font-size: 16.5px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-middle-content-right-all-item span {
+    /*border:1px solid green;*/
+    font-size: 16.5px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    /*letter-spacing: 2px;*/
+}
+
+/*停车位使用率*/
+/*货位使用率*/
+.main-content-left-bottom {
+    /*border:1px solid orange;*/
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 488px;
+    height: 267px;
+    background: url("../../images/bigscreen/use-rate1.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-content-left-bottom-title {
+    /*border:1px solid darkgoldenrod;*/
+    width: 488px;
+    height: 33px;
+    position: relative;
+}
+
+.main-content-left-bottom-title label {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-bottom-content {
+    /*border: 5px solid brown;*/
+    width: 488px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-bottom-content-left {
+    /*border: 1px solid darkmagenta;*/
+    width: 170px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-bottom-content-left-all {
+    /*border: 1px solid green;*/
+    width: 170px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-bottom-content-left-all-button {
+    /*border: 1px solid red;*/
+    cursor: pointer;
+    width: 170px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-content-left-bottom-content-left-all-button label {
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    /*top: 15px;*/
+    /*left: 40px;*/
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-bottom-content-left-all-button img {
+    /*border:1px solid red;*/
+    cursor: pointer;
+    z-index: 1;
+    width: 120px;
+    height: 40px;
+}
+
+.main-content-left-bottom-content-middle {
+    /*border:1px solid green;*/
+    width: 168px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-bottom-content-middle-chart {
+    /*border:1px solid blue;*/
+    width: 130px;
+    height: 124px;
+}
+
+.main-content-left-bottom-content-right {
+    /*border:1px solid darkmagenta;*/
+    width: 150px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-bottom-content-right-all {
+    /*border:1px solid red;*/
+    width: 150px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-bottom-content-right-all-item {
+    /*border:1px solid green;*/
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-left-bottom-content-right-all-item label {
+    /*border:1px solid green;*/
+    font-size: 16.5px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-left-bottom-content-right-all-item span {
+    /*border:1px solid green;*/
+    font-size: 16.5px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+    margin-right: 30px;
+}
+
+/*货位使用率*/
+/*左边结束*/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/*中间开始*/
+.main-content-middle {
+    /*border:1px solid darkgreen;*/
+    width: 912px;
+    height: 990px;
+}
+
+.main-content-middle-top {
+    /*border:1px solid dodgerblue;*/
+    width: 912px;
+    height: 467px;
+    background: url("../../images/bigscreen/main-middle-back.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+}
+
+.main-content-middle-top-title {
+    /*border:1px solid fuchsia;*/
+    width: 912px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-middle-top-title-tab1 {
+    /*border:1px solid gold;*/
+    cursor: pointer;
+    width: 205px;
+    height: 36px;
+    position: relative;
+}
+
+.main-content-middle-top-title-tab1 label {
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    font-size: 17.6px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-middle-top-title-tab2 {
+    /*border:1px solid dodgerblue;*/
+    cursor: pointer;
+    width: 164px;
+    height: 36px;
+    position: relative;
+    /*background: url("../../images/bigscreen/middle-top-tab-unselected.png") no-repeat;*/
+    /*background-size:100% 100%;*/
+}
+
+.main-content-middle-top-title-tab2 label {
+    /*border:1px solid dodgerblue;*/
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    left: 40px;
+    font-size: 17.6px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+    /*background: url("../../images/bigscreen/middle-top-tab-unselected.png") no-repeat;*/
+    /*background-size:100% 100%;*/
+}
+
+.main-content-middle-top-title-tab3 {
+    /*border:1px solid red;*/
+    cursor: pointer;
+    width: 134px;
+    height: 36px;
+    position: relative;
+    /*background: url("../../images/bigscreen/middle-top-tab-unselected.png") no-repeat;*/
+    /*background-size:100% 100%;*/
+}
+
+.main-content-middle-top-title-tab3 label {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 17.6px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+    /*background: url("../../images/bigscreen/middle-top-tab-unselected.png") no-repeat;*/
+    /*background-size:100% 100%;*/
+}
+
+.main-content-middle-top-title-tab4 {
+    /*border:1px solid #00b38b;*/
+    width: 280px;
+    height: 36px;
+}
+
+.main-content-middle-top-title-tab5 {
+    /*border:1px solid lightsalmon;*/
+    width: 129px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-content-middle-top-title-tab5 img {
+    /*border:1px solid lightsalmon;*/
+    cursor: pointer;
+    width: 129px;
+    height: 36px;
+}
+
+.main-content-middle-top-title-tab5 label {
+    cursor: pointer;
+    position: absolute;
+    font-size: 17.6px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-middle-top-content {
+    /*border:1px solid gold;*/
+    width: 912px;
+    height: 431px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*库内鸟撖图*/
+.main-content-middle-top-content-aerialview {
+    /*border:1px solid red;*/
+    width: 912px;
+    height: 431px;
+    position: relative
+}
+
+.main-content-middle-top-content-aerialview-overlay {
+    /*border:1px solid orange;*/
+    top: 0px;
+    left: 0px;
+    width: 912px;
+    height: 431px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: url("../../images/bigscreen/middle-top-back-canvas.png") no-repeat;*/
+    /*background-size:100% 100%;*/
+}
+
+.main-content-middle-top-content-aerialview-overlay-cultural {
+    width: 912px;
+    height: 431px;
+}
+
+.main-content-middle-top-content-aerialview-overlay-aerialview {
+    width: 912px;
+    height: 431px;
+}
+
+/*3d预览*/
+.main-content-middle-top-content-3dview {
+    /*border:1px solid red;*/
+    margin-right: 3px;
+}
+
+.main-content-middle-top-content-mapview {
+    /*border:1px solid red;*/
+    width: 912px;
+    height: 416px;
+    margin-left: 5px;
+    margin-top: 0px;
+    position: relative
+}
+
+/*中间地图区域结束*/
+/*中间中间车位部分*/
+.main-content-middle-middle {
+    /*border:1px solid red;*/
+    width: 906px;
+    height: 240px;
+    background: url("../../images/bigscreen/main-content-middle-middle-back.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main-content-middle-middle-top {
+    /*border:1px solid forestgreen;*/
+    width: 900px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-middle-middle-top-left {
+    /*border:1px solid red;*/
+    width: 226px;
+    height: 40px;
+    position: relative;
+}
+
+.main-content-middle-middle-top-left label {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-middle-middle-top-middle {
+    /*border:1px solid springgreen;*/
+    width: 560px;
+    height: 40px;
+}
+
+.main-content-middle-middle-top-right {
+    /*border:1px solid darkorange;*/
+    width: 126px;
+    height: 40px;
+    position: relative;
+}
+
+.main-content-middle-middle-top-right img {
+    width: 126px;
+    height: 40px;
+}
+
+.main-content-middle-middle-top-right label {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-middle-middle-middle {
+    /*border:1px solid firebrick;*/
+    width: 912px;
+    height: 42px;
+}
+
+.main-content-middle-middle-middle-all {
+    /*border:1px solid firebrick;*/
+    width: 612px;
+    height: 42px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.main-content-middle-middle-middle-all-tab {
+    /*border:1px solid #f0ad4e;*/
+    width: 131px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+.main-content-middle-middle-middle-all-tab img {
+    width: 128px;
+    height: 28px;
+}
+
+.main-content-middle-middle-middle-all-tab label {
+    position: absolute;
+    /*top: 10px;*/
+    /*left: 10px;*/
+    /*    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+}
+
+.main-content-middle-middle-bottom {
+    /*border:1px solid fuchsia;*/
+    width: 912px;
+    height: 158px;
+}
+
+.main-content-middle-middle-bottom-all {
+    /*border:1px solid fuchsia;*/
+    width: 910px;
+    height: 158px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*.main-content-middle-middle-bottom-all-everycar {
+    border:1px solid red;
+    width: 112px;
+    height: 101px;
+    position: relative;
+}
+.main-content-middle-middle-bottom-all-everycar label{
+    position: absolute;
+    top: 76px;
+    font-size: 13px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    !*letter-spacing: 2px;*!
+}*/
+.main-content-middle-middle-bottom-all-everycar {
+    /*border:1px solid red;*/
+    width: 112px;
+    height: 101px;
+    background: url("../../images/bigscreen/main-middle-middle-powercar-in.png") no-repeat;
+    background-size: 100% 100%;
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-middle-middle-bottom-all-everycar-up {
+    width: 112px;
+    height: 69px;
+}
+
+.main-content-middle-middle-bottom-all-everycar-bottom {
+    /*border: 1px solid red;*/
+    width: 100px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-middle-middle-bottom-all-everycar-bottom label {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    margin-right: 2px;
+}
+
+/*中间底部密集柜*/
+.main-content-middle-buttom {
+    /*border:1px solid firebrick;*/
+    width: 908px;
+    height: 255px;
+    background: url("../../images/bigscreen/main-content-middle-bottom-back.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main-content-middle-buttom-top {
+    /*border:1px solid blue;*/
+    width: 912px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-middle-buttom-top-left {
+    /*border:1px solid fuchsia;*/
+    width: 228px;
+    height: 38px;
+    position: relative;
+}
+
+.main-content-middle-buttom-top-left label {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-middle-buttom-top-right {
+    /*border:1px solid #FF00FF;*/
+    width: 684px;
+    height: 38px;
+}
+
+.main-content-middle-buttom-middle {
+    /*border:1px solid forestgreen;*/
+    width: 912px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-middle-buttom-middle label {
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-middle-buttom-buttom {
+    /*border:1px solid red;*/
+    width: 912px;
+    height: 182px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-middle-buttom-buttom-img0 {
+    /*border:1px solid #ff5b59;*/
+    width: 813px;
+    height: 131px;
+}
+
+.main-content-middle-buttom-buttom-img {
+    /*border:1px solid springgreen;*/
+    width: 900px;
+    height: 180px;
+}
+
+/*中间结束*/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/****************************/
+/*右边开始*/
+.main-content-right {
+    /*border:1px solid blue;*/
+    width: 490px;
+    height: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1px;
+}
+
+/*天气和温湿度开始*/
+.main-content-right-top {
+    width: 490px;
+    height: 106px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.main-content-right-top-all {
+    /*border:1px solid red;*/
+    width: 490px;
+    height: 106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content-right-top-all-temp {
+    /*border:1px solid forestgreen;*/
+    width: 236px;
+    height: 106px;
+    background: url("../../images/bigscreen/main-content-right-top-back.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*温度*/
+.main-content-right-top-all-temp-left {
+    /*border:1px solid red;*/
+    width: 128px;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-top-all-temp-common-right {
+    /*border:1px solid orange;*/
+    width: 108px;
+    height: 106px;
+    position: relative;
+}
+
+.main-content-right-top-all-temp-common-right img {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 53px;
+    height: 33px;
+}
+
+.main-content-right-top-all-temp-left-item {
+    /*border:1px solid red;*/
+    margin-left: 30px;
+    width: 128px;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.main-content-right-top-all-temp-left-item div {
+    /*border:1px solid green;*/
+    font-size: 16px;
+    color: #008EFD;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-right-top-all-temp-left-item span {
+    /*border:1px solid goldenrod;*/
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+    margin-right: 0px;
+}
+
+.main-content-right-top-all-temp-left-item label {
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+/*天气和温湿度结束*/
+/*车辆记录*/
+.main-content-right-middle1 {
+    /*border:1px solid red;*/
+    width: 490px;
+    height: 268px;
+    background: url("../../images/bigscreen/car-record.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+}
+
+.main-content-right-middle1-title {
+    /*border:1px solid red;*/
+    width: 490px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-middle1-title-left {
+    /*border:1px solid goldenrod;*/
+    width: 125px;
+    height: 38px;
+}
+
+.main-content-right-middle1-title-middle {
+    /*border:1px solid fuchsia;*/
+    cursor: pointer;
+    width: 135px;
+    height: 38px;
+    position: relative;
+}
+
+.main-content-right-middle1-title-middle label {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-right-middle1-title-right {
+    /*border:1px solid #FFFF00;*/
+    cursor: pointer;
+    width: 230px;
+    height: 38px;
+    position: relative;
+}
+
+.main-content-right-middle1-title-right label {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-right-middle1-content {
+    /*border:1px solid #FFFF00;*/
+    width: 490px;
+    height: 226px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-middle1-content-all {
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    width: 490px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-middle1-content-all-item {
+    /*border: 1px solid forestgreen;*/
+    width: 490px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-middle1-content-all-item i {
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.main-content-right-middle1-content-all-item label {
+    width: 300px;
+    font-size: 13px;
+    color: white;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+}
+
+.main-content-right-middle1-content-all-item span {
+    width: 190px;
+    text-align: right;
+    font-size: 13px;
+    color: #A8B5BE;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    margin-right: 28px;
+}
+
+/*车辆统计*/
+.main-content-right-middle2 {
+    /*border:1px solid blue;*/
+    width: 490px;
+    height: 255px;
+    background: url("../../images/bigscreen/car-statis.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+}
+
+.main-content-right-middle2-title {
+    /*border:1px solid palevioletred;*/
+    width: 490px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-middle2-title-left {
+    /*border:1px solid blue;*/
+    width: 86px;
+    height: 36px;
+}
+
+.main-content-right-middle2-title-middle {
+    /*border:1px solid red;*/
+    cursor: pointer;
+    width: 172px;
+    height: 36px;
+    position: relative;
+}
+
+.main-content-right-middle2-title-middle label {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-right-middle2-title-right {
+    /*border:1px solid springgreen;*/
+    cursor: pointer;
+    width: 232px;
+    height: 36px;
+    position: relative;
+}
+
+.main-content-right-middle2-title-right label {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-right-middle2-content {
+    /*border:1px solid fuchsia;*/
+    width: 490px;
+    height: 212px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-middle2-content-chartout {
+    /* border:1px solid springgreen;*/
+    width: 490px;
+    height: 212px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-middle2-content-chartout-statis-info {
+    /*border:1px solid springgreen;*/
+    width: 100%;
+    height: 212px;
+}
+
+/*监控*/
+.main-content-right-bottom {
+    /*border:1px solid darkmagenta;*/
+    width: 483px;
+    height: 311px;
+    background: url("../../images/bigscreen/monitor.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+}
+
+.main-content-right-bottom-title {
+    width: 483px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-bottom-title-left {
+    /*border:1px solid blue;*/
+    width: 123px;
+    height: 38px;
+}
+
+.main-content-right-bottom-title-middle {
+    /*border:1px solid red;*/
+    cursor: pointer;
+    width: 163px;
+    height: 38px;
+    position: relative;
+}
+
+.main-content-right-bottom-title-middle label {
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    left: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-right-bottom-title-right {
+    /*border:1px solid springgreen;*/
+    cursor: pointer;
+    width: 204px;
+    height: 38px;
+    position: relative;
+}
+
+.main-content-right-bottom-title-right label {
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: '微软雅黑', sans-serif;
+    letter-spacing: 2px;
+}
+
+.main-content-right-bottom-content {
+    /*border:1px solid springgreen;*/
+    width: 483px;
+    height: 273px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right-bottom-content-monitor {
+    /*border:1px solid springgreen;*/
+    width: 483px;
+    height: 253px;
+}
+
+.main-content-right-bottom-content-monitor iframe {
+    width: 480px;
+    height: 253px;
+    border: none;
+    scrolling: no;
+}
+
+/*右边结束*/

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="#" />
+    <link href="/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main-out">
+      <div class="top-title">
+        <img
+          class="top-title"
+          src="/IntelligentCarparking/images/bigscreen/top-title.png"
+        />
+      </div>
+      <div class="main-content">
+        <div class="main-content-left">
+          <div class="main-content-left-top">
+            <div class="main-content-left-top-goods-info-title">
+              <label>台账信息</label>
+            </div>
+            <div class="main-content-left-top-goods-info-summary">
+              <div class="main-content-left-top-goods-info-summary-tab">
+                <div class="main-content-left-top-goods-info-summary-tab-text">
+                  资产总数<span id="allGoodsTotal">0</span>
+                </div>
+              </div>
+              <div class="main-content-left-top-goods-info-summary-tab">
+                <div class="main-content-left-top-goods-info-summary-tab-text">
+                  资产种类<span id="goodsTypeTotal">0</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-content-left-top-goods-info-voltage">
+              <div class="main-content-left-top-goods-info-voltage-tab">
+                <div
+                  class="main-content-left-top-goods-info-voltage-tab-div1"
+                  onclick="loadGoodsInfo('0.4KV')"
+                >
+                  <img
+                    id="imgGoodsInfo_4KV"
+                    src="/IntelligentCarparking/images/bigscreen/voltage-selected.png"
+                  />
+                  <label>0.4KV</label>
+                </div>
+                <div
+                  class="main-content-left-top-goods-info-voltage-tab-div"
+                  onclick="loadGoodsInfo('10KV')"
+                >
+                  <img
+                    id="imgGoodsInfo_10KV"
+                    src="/IntelligentCarparking/images/bigscreen/voltage-unselected.png"
+                  />
+                  <label>10KV</label>
+                </div>
+                <div
+                  class="main-content-left-top-goods-info-voltage-tab-div"
+                  onclick="loadGoodsInfo('20KV')"
+                >
+                  <img
+                    id="imgGoodsInfo_20KV"
+                    src="/IntelligentCarparking/images/bigscreen/voltage-unselected.png"
+                  />
+                  <label>20KV</label>
+                </div>
+              </div>
+            </div>
+            <div class="main-content-left-top-goods-info-list">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <thead>
+                  <tr>
+                    <td>资产名称</td>
+                    <td>存放位置</td>
+                    <td>数量</td>
+                    <td>单位</td>
+                  </tr>
+                </thead>
+                <tbody id="goodsListTBody">
+                  <tr>
+                    <td>扳手1</td>
+                    <td>仓库1</td>
+                    <td>50</td>
+                    <td>个</td>
+                  </tr>
+                  <tr>
+                    <td>扳手2</td>
+                    <td>仓库1</td>
+                    <td>50</td>
+                    <td>个</td>
+                  </tr>
+                  <tr>
+                    <td>扳手3</td>
+                    <td>仓库1</td>
+                    <td>50</td>
+                    <td>个</td>
+                  </tr>
+                  <tr>
+                    <td>扳手4</td>
+                    <td>仓库1</td>
+                    <td>50</td>
+                    <td>个</td>
+                  </tr>
+                  <tr>
+                    <td>扳手5</td>
+                    <td>仓库1</td>
+                    <td>50</td>
+                    <td>个</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="main-content-left-top-goods-info-empty"></div>
+          </div>
+          <div class="main-content-left-middle">
+            <div class="main-content-left-middle-title">
+              <label>车位使用率</label>
+            </div>
+            <div class="main-content-left-middle-content">
+              <div class="main-content-left-middle-content-left">
+                <div
+                  id="parkingPlaceUseRateDiv"
+                  class="main-content-left-middle-content-left-all"
+                >
+                  <div
+                    class="main-content-left-middle-content-left-all-button"
+                    onclick="loadGaragesUseRate(1)"
+                  >
+                    <img
+                      src="/IntelligentCarparking/images/bigscreen/switch-button-selected.png"
+                    />
+                    <label class="">低压发电车</label>
+                  </div>
+                  <div class="main-content-left-middle-content-left-all-button">
+                    <img
+                      src="/IntelligentCarparking/images/bigscreen/switch-button-unselected.png"
+                    />
+                    <label class="">中压发电车</label>
+                  </div>
+                  <div class="main-content-left-middle-content-left-all-button">
+                    <img
+                      src="/IntelligentCarparking/images/bigscreen/switch-button-unselected.png"
+                    />
+                    <label class="">绝缘斗臂车</label>
+                  </div>
+                  <div class="main-content-left-middle-content-left-all-button">
+                    <img
+                      src="/IntelligentCarparking/images/bigscreen/switch-button-unselected.png"
+                    />
+                    <label class="">特种作业车</label>
+                  </div>
+                </div>
+              </div>
+              <div class="main-content-left-middle-content-middle">
+                <div
+                  id="useRate1"
+                  class="main-content-left-middle-content-middle-chart"
+                ></div>
+              </div>
+              <div class="main-content-left-middle-content-right">
+                <div class="main-content-left-middle-content-right-all">
+                  <div class="main-content-left-middle-content-right-all-item">
+                    <label>总车位：</label
+                    ><span id="totalParkingPlaces">10</span>
+                  </div>
+                  <div class="main-content-left-middle-content-right-all-item">
+                    <label>占用车位：</label
+                    ><span id="occupyParkingPlaces">8</span>
+                  </div>
+                  <div class="main-content-left-middle-content-right-all-item">
+                    <label>空闲车位：</label
+                    ><span id="freeParkingPlaces">2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-left-bottom">
+            <div class="main-content-left-bottom-title">
+              <label>货位使用率</label>
+            </div>
+            <div class="main-content-left-bottom-content">
+              <div class="main-content-left-bottom-content-left">
+                <div
+                  id="locationUseRateDiv"
+                  class="main-content-left-bottom-content-left-all"
+                >
+                  <div class="main-content-left-bottom-content-left-all-button">
+                    <img
+                      src="/IntelligentCarparking/images/bigscreen/switch-button-selected.png"
+                    />
+                    <label>0.4KV储区</label>
+                  </div>
+                  <div class="main-content-left-bottom-content-left-all-button">
+                    <img
+                      src="/IntelligentCarparking/images/bigscreen/switch-button-unselected.png"
+                    />
+                    <label>10KV储区</label>
+                  </div>
+                  <div class="main-content-left-bottom-content-left-all-button">
+                    <img
+                      src="/IntelligentCarparking/images/bigscreen/switch-button-unselected.png"
+                    />
+                    <label>20KV储区</label>
+                  </div>
+                </div>
+              </div>
+              <div class="main-content-left-bottom-content-middle">
+                <div
+                  id="useRate2"
+                  class="main-content-left-bottom-content-middle-chart"
+                ></div>
+              </div>
+              <div class="main-content-left-bottom-content-right">
+                <div class="main-content-left-bottom-content-right-all">
+                  <div class="main-content-left-bottom-content-right-all-item">
+                    <label>总货位：</label
+                    ><span id="totalLocationCount">10</span>
+                  </div>
+                  <div class="main-content-left-bottom-content-right-all-item">
+                    <label>占用货位：</label
+                    ><span id="usedLocationCount">8</span>
+                  </div>
+                  <div class="main-content-left-bottom-content-right-all-item">
+                    <label>空闲货位：</label
+                    ><span id="freeLocationCount">2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content-middle">
+          <div class="main-content-middle-top">
+            <div class="main-content-middle-top-title">
+              <li class="main-content-middle-top-title-tab1">
+                <label>效果图</label>
+              </li>
+              <li class="main-content-middle-top-title-tab2">
+                <label>车辆GPS</label>
+              </li>
+              <li class="main-content-middle-top-title-tab3">
+                <label>基地介绍</label>
+              </li>
+              <li class="main-content-middle-top-title-tab4"></li>
+              <li class="main-content-middle-top-title-tab5">
+                <img
+                  src="/IntelligentCarparking/images/bigscreen/main-middle-right-buttom.png"
+                />
+                <label>3D全景图</label>
+              </li>
+            </div>
+            <div class="main-content-middle-top-content">
+              <div
+                id="aerialViewTabDiv"
+                class="main-content-middle-top-content-aerialview"
+              ></div>
+              <div
+                id="carGpsTabDiv"
+                class="main-content-middle-top-content-mapview"
+              ></div>
+              <div
+                id="culturalTabDiv"
+                class="main-content-middle-top-content-aerialview"
+              ></div>
+              <div
+                id="view3dTabDiv"
+                class="main-content-middle-top-content-3dview"
+              ></div>
+            </div>
+          </div>
+          <div class="main-content-middle-middle">
+            <div class="main-content-middle-middle-top">
+              <div class="main-content-middle-middle-top-left">
+                <label>车位信息</label>
+              </div>
+              <div class="main-content-middle-middle-top-middle"></div>
+              <div
+                class="main-content-middle-middle-top-right"
+                onclick="oneKeyOpenDoors()"
+              >
+                <img
+                  src="/IntelligentCarparking/images/bigscreen/main-middle-right-buttom.png"
+                />
+                <label>一键开门</label>
+              </div>
+            </div>
+            <div class="main-content-middle-middle-middle">
+              <div
+                id="parkingPlaceInfoDiv"
+                class="main-content-middle-middle-middle-all"
+              >
+                <div class="main-content-middle-middle-middle-all-tab">
+                  <img
+                    src="/IntelligentCarparking/images/bigscreen/main-content-middle-middle-middle-tab-selected.png"
+                  />
+                  <label>低压发电车库</label>
+                </div>
+                <div class="main-content-middle-middle-middle-all-tab">
+                  <img
+                    src="/IntelligentCarparking/images/bigscreen/main-content-middle-middle-middle-tab-unselected.png"
+                  />
+                  <label>中压发电车库</label>
+                </div>
+                <div class="main-content-middle-middle-middle-all-tab">
+                  <img
+                    src="/IntelligentCarparking/images/bigscreen/main-content-middle-middle-middle-tab-unselected.png"
+                  />
+                  <label>绝缘斗臂车库</label>
+                </div>
+                <div class="main-content-middle-middle-middle-all-tab">
+                  <img
+                    src="/IntelligentCarparking/images/bigscreen/main-content-middle-middle-middle-tab-unselected.png"
+                  />
+                  <label>特种作业车库</label>
+                </div>
+              </div>
+            </div>
+            <div class="main-content-middle-middle-bottom">
+              <div
+                id="parkingPlaceInfoListDiv"
+                class="main-content-middle-middle-bottom-all"
+              >
+                <div class="main-content-middle-middle-bottom-all-everycar">
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-up"
+                  ></div>
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-bottom"
+                  >
+                    <label>NA21256</label>
+                  </div>
+                </div>
+                <div class="main-content-middle-middle-bottom-all-everycar">
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-up"
+                  ></div>
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-bottom"
+                  >
+                    <label>NA21256</label>
+                  </div>
+                </div>
+                <div class="main-content-middle-middle-bottom-all-everycar">
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-up"
+                  ></div>
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-bottom"
+                  >
+                    <label>NA21256</label>
+                  </div>
+                </div>
+                <div class="main-content-middle-middle-bottom-all-everycar">
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-up"
+                  ></div>
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-bottom"
+                  >
+                    <label>NA21256</label>
+                  </div>
+                </div>
+                <div class="main-content-middle-middle-bottom-all-everycar">
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-up"
+                  ></div>
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-bottom"
+                  >
+                    <label>NA21256</label>
+                  </div>
+                </div>
+                <div class="main-content-middle-middle-bottom-all-everycar">
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-up"
+                  ></div>
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-bottom"
+                  >
+                    <label>NA21256</label>
+                  </div>
+                </div>
+                <div class="main-content-middle-middle-bottom-all-everycar">
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-up"
+                  ></div>
+                  <div
+                    class="main-content-middle-middle-bottom-all-everycar-bottom"
+                  >
+                    <label>NA21256</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-middle-buttom">
+            <div class="main-content-middle-buttom-top">
+              <div class="main-content-middle-buttom-top-left">
+                <label>密集柜</label>
+              </div>
+              <div class="main-content-middle-buttom-top-right"></div>
+            </div>
+            <div class="main-content-middle-buttom-middle">
+              <label id="cabinetText"></label>
+            </div>
+            <div class="main-content-middle-buttom-buttom">
+              <img
+                id="cabinetImg"
+                class="main-content-middle-buttom-buttom-img0"
+                src="/IntelligentCarparking/images/bigscreen/cabinet/0.gif"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content-right">
+          <div class="main-content-right-top">
+            <div class="main-content-right-top-all">
+              <div class="main-content-right-top-all-temp">
+                <div class="main-content-right-top-all-temp-left">
+                  <div class="main-content-right-top-all-temp-left-item">
+                    <div>今日天气</div>
+                  </div>
+                  <div class="main-content-right-top-all-temp-left-item">
+                    <span id="weather">阴</span
+                    ><label id="temperature">23℃</label>
+                  </div>
+                  <div class="main-content-right-top-all-temp-left-item">
+                    <label id="category">空气优</label>
+                  </div>
+                </div>
+                <div class="main-content-right-top-all-temp-common-right">
+                  <img
+                    src="/IntelligentCarparking/images/bigscreen/air-cloudy.png"
+                  />
+                </div>
+              </div>
+              <div class="main-content-right-top-all-temp">
+                <div class="main-content-right-top-all-temp-left">
+                  <div class="main-content-right-top-all-temp-left-item">
+                    <div>库房环境</div>
+                  </div>
+                  <div class="main-content-right-top-all-temp-left-item">
+                    <span>温度：</span
+                    ><label id="temperatureOfIntelligentWarehouse">23℃</label>
+                  </div>
+                  <div class="main-content-right-top-all-temp-left-item">
+                    <span>湿度：</span
+                    ><label id="wetOfIntelligentWarehouse">10℃</label>
+                  </div>
+                </div>
+                <div class="main-content-right-top-all-temp-common-right">
+                  <img
+                    src="/IntelligentCarparking/images/bigscreen/temp-wet.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-right-middle1">
+            <div class="main-content-right-middle1-title">
+              <div class="main-content-right-middle1-title-left"></div>
+              <div
+                class="main-content-right-middle1-title-middle"
+                onclick="loadCarInoutRecord()"
+              >
+                <label>车辆记录</label>
+              </div>
+              <div
+                class="main-content-right-middle1-title-right"
+                onclick="loadGoodInoutRecord()"
+              >
+                <label>资产记录</label>
+              </div>
+            </div>
+            <div class="main-content-right-middle1-content">
+              <div
+                id="inoutRecordDiv"
+                class="main-content-right-middle1-content-all"
+              >
+                <div class="main-content-right-middle1-content-all-item">
+                  <i style="background-color: red"></i>
+                  <label>林某某出库20件安全帽</label>
+                  <span>2022-11-20 20:33:30</span>
+                </div>
+                <div class="main-content-right-middle1-content-all-item">
+                  <i style="background-color: #67c23a"></i>
+                  <label>林某某入库10件安全帽</label>
+                  <span>2022-11-20 20:33:30</span>
+                </div>
+                <div class="main-content-right-middle1-content-all-item">
+                  <i style="background-color: red"></i>
+                  <label>林某某出库20件安全帽</label>
+                  <span>2022-11-20 20:33:30</span>
+                </div>
+                <div class="main-content-right-middle1-content-all-item">
+                  <i style="background-color: #67c23a"></i>
+                  <label>林某某入库10件安全帽</label>
+                  <span>2022-11-20 20:33:30</span>
+                </div>
+                <div class="main-content-right-middle1-content-all-item">
+                  <i style="background-color: red"></i>
+                  <label>林某某出库20件安全帽</label>
+                  <span>2022-11-20 20:33:30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-right-middle2">
+            <div class="main-content-right-middle2-title">
+              <div class="main-content-right-middle2-title-left"></div>
+              <div
+                class="main-content-right-middle2-title-middle"
+                onclick="loadCarAndGoodsStatis(1)"
+              >
+                <label>车辆作业统计</label>
+              </div>
+              <div
+                class="main-content-right-middle2-title-right"
+                onclick="loadCarAndGoodsStatis(2)"
+              >
+                <label>资产作业统计</label>
+              </div>
+            </div>
+            <div class="main-content-right-middle2-content">
+              <div class="main-content-right-middle2-content-chartout">
+                <div
+                  id="carAndGoodsCount"
+                  class="main-content-right-middle2-content-chartout-statis-info"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-right-bottom">
+            <div class="main-content-right-bottom-title">
+              <div class="main-content-right-bottom-title-left"></div>
+              <div class="main-content-right-bottom-title-middle">
+                <label onclick="jumpUrl(1)">作业监控</label>
+              </div>
+              <div class="main-content-right-bottom-title-right">
+                <label onclick="jumpUrl(2)">库房监控</label>
+              </div>
+            </div>
+            <div class="main-content-right-bottom-content">
+              <div class="main-content-right-bottom-content-monitor">
+                <iframe
+                  scrolling="no"
+                  src="/IntelligentCarparking/bigscreeniframe/monitor/monitor.jsp"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" id="contextPath" value="/IntelligentCarparking" />
+    <input
+      id="intelligentWarehouseUrl"
+      type="hidden"
+      value="http://192.168.0.2/IntelligentWarehouse"
+    />
+    <input id="view3dUrl" type="hidden" value="http://localhost:64270/" />
+    <input id="monitorJumpHref1" type="hidden" value="http://www.baidu.com" />
+    <input id="monitorJumpHref2" type="hidden" value="http://www.163.com" />
+    <script type="text/javascript" src="/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/js/jquery-gauge.js"></script>
+    <script type="text/javascript" src="/js/echarts.js"></script>
+    <script type="text/javascript" src="/js/websocket.js"></script>
+    <script type="text/javascript" src="/js/bigscreen-main.js"></script>
+  </body>
+</html>
